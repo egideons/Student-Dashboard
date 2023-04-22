@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+  <link rel="shortcut icon" href="images/dashboard.png" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo" title="University Management System">
+      <a rel="noopener" title="index" href="index.html">
+        <img src="images/dashboard.png" alt="" />
+      </a>
+      <a href="index.html">
+        <h2>Student Dashboard</h2>
+      </a>
+    </div>
+    <div class="navbar">
+      <a href="index.html" class="active">
+        <span class="material-icons-sharp">home</span>
+        <h3>Home</h3>
+      </a>
+      <a href="courses.html" onclick="timeTableAll()">
+        <span class="material-icons-sharp">book</span>
+        <h3>Register Courses</h3>
+      </a>
+      <a href="exam.html">
+        <span class="material-icons-sharp">grid_view</span>
+        <h3>Examination</h3>
+      </a>
+      <a href="password.html">
+        <span class="material-icons-sharp">password</span>
+        <h3>Change Password</h3>
+      </a>
+      <a href="../index.html">
+        <span class="material-icons-sharp" onclick="">logout</span>
+        <h3>Logout</h3>
+      </a>
+    </div>
+    <div id="profile-btn">
+      <span class="material-icons-sharp">person</span>
+    </div>
+    <div class="theme-toggler">
+      <span class="material-icons-sharp active">light_mode</span>
+      <span class="material-icons-sharp">dark_mode</span>
+    </div>
+  </header>
+  <div class="container">
+    <aside>
+      <div class="profile">
+        <div class="top">
+          <div class="profile-photo">
+            <img src="images/avatar.png" alt="avatar" />
+          </div>
+          <div class="info">
+            <p>Hey, <b>Edeh Somtochukwu</b></p>
+            <small class="text-muted"></small>
+          </div>
+        </div>
+        <div class="about">
+          <h5>Course</h5>
+          <p>Computer Science</p>
+          <h5>DOB</h5>
+          <p>15-Sept-2000</p>
+          <h5>Contact</h5>
+          <p>08037238242</p>
+          <h5>Email</h5>
+          <p>somto@mail.com</p>
+          <h5>Address</h5>
+          <p>Enugu, Enugu State</p>
+          <br />
+          <br />
+          <a href="../Profile/profile.html">
+            <h5>Edit Profile</h5>
+            <p>Edit your profile details</p>
+          </a>
+          <a href="../Academic Session/index.html">
+            <h5>Change Session</h5>
+            <p>Change Academic Session</p>
+          </a>
+          <a href="../Records/index.html">
+            <h5>Student Records</h5>
+            <p>Cummulative Records</p>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <h1>Attendance</h1>
+      <div class="subjects">
+        <div class="eg">
+          <span class="material-icons-sharp">architecture</span>
+          <h3>Operations Research</h3>
+          <h2>CSC 418</h2>
+          <div class="progress">
+            <svg>
+              <circle cx="38" cy="38" r="36"></circle>
+            </svg>
+            <div class="number">
+              <p>86%</p>
+            </div>
+          </div>
+          <small class="text-muted">Last 24 Hours</small>
+        </div>
+        <div class="mth">
+          <span class="material-icons-sharp">functions</span>
+          <h3>Computer Maintenance and Installation</h3>
+          <h2>CSC 442</h2>
+          <div class="progress">
+            <svg>
+              <circle cx="38" cy="38" r="36"></circle>
+            </svg>
+            <div class="number">
+              <p>93%</p>
+            </div>
+          </div>
+          <small class="text-muted">Last 24 Hours</small>
+        </div>
+        <div class="cs">
+          <span class="material-icons-sharp">computer</span>
+          <h3>Distributed Computing Systems</h3>
+          <h2>CSC 458</h2>
+          <div class="progress">
+            <svg>
+              <circle cx="38" cy="38" r="36"></circle>
+            </svg>
+            <div class="number">
+              <p>81%</p>
+            </div>
+          </div>
+          <small class="text-muted">Last 24 Hours</small>
+        </div>
+        <div class="cg">
+          <span class="material-icons-sharp">dns</span>
+          <h3>Introduction to Miroprocessors and Microcomputers</h3>
+          <h2>CSC 456</h2>
+          <div class="progress">
+            <svg>
+              <circle cx="38" cy="38" r="36"></circle>
+            </svg>
+            <div class="number">
+              <p>96%</p>
+            </div>
+          </div>
+          <small class="text-muted">Last 24 Hours</small>
+        </div>
+        <div class="net">
+          <span class="material-icons-sharp">router</span>
+          <h3>Software Project Management</h3>
+          <h2>CSC 426</h2>
+          <div class="progress">
+            <svg>
+              <circle cx="38" cy="38" r="36"></circle>
+            </svg>
+            <div class="number">
+              <p>92%</p>
+            </div>
+          </div>
+          <small class="text-muted">Last 24 Hours</small>
+        </div>
+        <div class="net">
+          <span class="material-icons-sharp">man</span>
+          <h3>Artificial Intellignce And Expert System</h3>
+          <h2>CSC 472</h2>
+          <div class="progress">
+            <svg>
+              <circle cx="38" cy="38" r="36"></circle>
+            </svg>
+            <div class="number">
+              <p>92%</p>
+            </div>
+          </div>
+          <small class="text-muted">Last 24 Hours</small>
+        </div>
+        <div class="net">
+          <span class="material-icons-sharp">computer</span>
+          <h3>Human Computer Interface</h3>
+          <h2>CSC 468</h2>
+          <div class="progress">
+            <svg>
+              <circle cx="38" cy="38" r="36"></circle>
+            </svg>
+            <div class="number">
+              <p>92%</p>
+            </div>
+          </div>
+          <small class="text-muted">Last 24 Hours</small>
+        </div>
+      </div>
+
+      <div class="timetable" id="timetable">
+        <div>
+          <h2>List of Courses</h2>
+        </div>
+        <span class="closeBtn" onclick="timeTableAll()">X</span>
+        <table>
+          <thead>
+            <tr>
+              <th>Session</th>
+              <th>Course Code</th>
+              <th>Course Title</th>
+              <th>Semester</th>
+              <th>Unit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2021-2022</td>
+              <td>CSC 418</td>
+              <td>Operations Research</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>2021-2022</td>
+              <td>CSC 442</td>
+              <td>Computer Maintenance and Installation</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>2021-2022</td>
+              <td>CSC 458</td>
+              <td>Distributed Computing</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>2021-2022</td>
+              <td>CSC 426</td>
+              <td>Software Project Management</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>2021-2022</td>
+              <td>CSC 456</td>
+              <td>Introduction to Microprocessors and Microcomputers</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>2021-2022</td>
+              <td>CSC 499</td>
+              <td>Research Project</td>
+              <td>2</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>2021-2022</td>
+              <td>CSC 472</td>
+              <td>Artificial Intellignce and Expert System</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>2021-2022</td>
+              <td>CSC 468</td>
+              <td>Human Computer Interface</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <div class="right">
+      <div class="announcements">
+        <h2>Announcements</h2>
+        <div class="updates">
+          <div class="message">
+            <p>
+              <b>Academic</b> <br />
+              This is to inform the general public that admission into
+              certificate programmes, first and higher degrees at ESUT
+              Institute of Education (Sandwich Programme) for the 2022/2023
+              academic session is ongoing in the following departments.
+            </p>
+            <small class="text-muted">2 Minutes Ago</small>
+          </div>
+
+          <div class="message">
+            <p>
+              <b>Examination</b> <br />
+              Examinations begin in April
+            </p>
+            <small class="text-muted">Yesterday</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="leaves">
+        <h2>Staff on leave</h2>
+        <div class="teacher">
+          <div class="profile-photo">
+            <img src="images/avatar.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>The Professor</h3>
+            <small class="text-muted">Day Span : Full Day</small>
+          </div>
+        </div>
+        <div class="teacher">
+          <div class="profile-photo">
+            <img src="images/avatar.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>Mr Henry</h3>
+            <small class="text-muted">Day Span : Half Day</small>
+          </div>
+        </div>
+        <div class="teacher">
+          <div class="profile-photo">
+            <img src="images/avatar.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>Ugochukwu Ani</h3>
+            <small class="text-muted">Day Span : 12 hours</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="timeTable.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+const Courses = [
+  {
+    session: "2021-2022",
+    courseCode: "CSC 418",
+    courseTitle: "Operations Research",
+    semester: "2",
+    unit: "2",
+  },
+  {
+    session: "2021-2022",
+    courseCode: "CSC 442",
+    courseTitle: "Computer Maintenance and Installation",
+    semester: "2",
+    unit: "2",
+  },
+  {
+    session: "2021-2022",
+    courseCode: "CSC 458",
+    courseTitle: "Distributed Computing Systems",
+    semester: "2",
+    unit: "2",
+  },
+  {
+    session: "2021-2022",
+    courseCode: "CSC 426",
+    courseTitle: "Software Project Management",
+    semester: "2",
+    unit: "2",
+  },
+  {
+    session: "2021-2022",
+    courseCode: "CSC 456",
+    courseTitle: "Introduction to Microprocessors and Mircrocomputers",
+    semester: "2",
+    unit: "2",
+  },
+  {
+    session: "2021-2022",
+    courseCode: "CSC 499",
+    courseTitle: "Research Project",
+    semester: "2",
+    unit: "4",
+  },
+  {
+    session: "2021-2022",
+    courseCode: "CSC 472",
+    courseTitle: "Artificial Intelligence and Expert System",
+    semester: "2",
+    unit: "2",
+  },
+  {
+    session: "2021-2022",
+    courseCode: "CSC 468",
+    courseTitle: "Human Computer Interface",
+    semester: "2",
+    unit: "2",
+  },
+];

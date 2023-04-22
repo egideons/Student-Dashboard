@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Profile</title>
+	<link rel="shortcut icon" href="images/dashboard.png" />
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<!-- font Awesome for icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+			.hoverButton {
+				background-color: #5a76fd;
+				/* Green */
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+				-webkit-transition-duration: 0.4s;
+				/* Safari */
+				transition-duration: 0.4s;
+			}
+
+			.hoverButton:hover {
+				box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+					0 17px 50px 0 rgba(0, 0, 0, 0.19);
+			}
+		</style>
+	</head>
+
+<body style="background: #9dbefc">
+
+	<section>
+		<div class="container my-4">
+			<div class="d-flex justify-content-center">
+				<div class="card" style="width:800px;">
+					<div class="row">
+
+						<div class="col-lg-12 col-md-12 col-sm-12 p-3">
+							<div class="d-flex m-4 mb-3 justify-content-between">
+								<div>
+									<a href="/Dashboard/index.html">
+										<button class="hoverButton">Student Dashboard</button>
+									</a>
+								</div>
+								<div class="all_btn">
+									<a href="editprofile.html" style="width: 155px; padding: 10px 10px;"
+										onclick="my_info();" class="btn bg-primary button text-light"><span>Edit
+											Profile</span>
+									</a>
+								</div>
+							</div>
+
+							<h4 style="margin-left: 350px;" class="font-weight-bold">My Profile</h4>
+							<br>
+							<br>
+							<div class="row m-2 justify-content-center">
+								<div class="card-image ">
+
+
+
+									<div class="profile">
+										<img src="images/avatar.png">
+									</div>
+
+								</div>
+							</div>
+
+							<div class="row m-2">
+								<div class="col-lg-6 col-sm-12">
+									<div class="name">
+										<label for="name">Name</label><br>
+										<input type="text" class="form-control" id="name" name="fname"
+											value="Somtochukwu" readonly>
+									</div>
+								</div>
+								<div class="col-lg-6 col-sm-12">
+									<div class="lastname">
+										<label for="lastname">Last Name</label><br>
+										<input type="text" class="form-control" id="lastname" name="lname" value="Edeh"
+											readonly>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="username  m-4">
+								<label for="username">User Name</label><br>
+								<input type="text" class="form-control" id="username" name="uname" value="Edeh Somto"
+									readonly>
+							</div>
+							<hr>
+							<div class="row m-2">
+								<div class="col-lg-6 col-sm-12">
+									<div class="email">
+										<label for="email">Email</label><br>
+										<input type="text" class="form-control" id="email" name="emailadd"
+											value="somto@mail.com" readonly>
+									</div>
+								</div>
+								<div class="col-lg-6 col-sm-12">
+									<div class="phone">
+										<label for="phone">Mobile no.</label><br>
+										<input type="text" class="form-control" id="phone" name="phone"
+											value="08037238242" readonly>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="row m-2">
+								<div class="col-lg-6 col-sm-12">
+									<div class="profession">
+										<label for="work">Profession</label><br>
+										<input type="text" class="form-control" id="work" name="prof" value="Student"
+											readonly>
+									</div>
+								</div>
+								<div class="col-lg-6 col-sm-12">
+									<div class="address">
+										<label for="address">Address</label><br>
+										<input type="text" class="form-control" id="address" name="address"
+											value="Enugu, Enugu State" readonly>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	crossorigin="anonymous"></script>
+
+<!-- custom js -->
+<script src="js/loader.js"></script>
+
+</html>

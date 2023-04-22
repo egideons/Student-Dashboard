@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination</title>
+    <link rel="shortcut icon" href="images/dashboard.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        header {
+            position: relative;
+        }
+
+        .exam {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 80vh;
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/dashboard.png" alt="" />
+            </a>
+            <a href="index.html">
+                <h2>Student Dashboard</h2>
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="index.html">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="courses.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">book</span>
+                <h3>Register Courses</h3>
+            </a>
+            <a href="exam.html" class="active">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+            <a href="password.html">
+                <span class="material-icons-sharp">password</span>
+                <h3>Change Password</h3>
+            </a>
+            <a href="../index.html">
+                <span class="material-icons-sharp">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn" style="display: none;">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="exam timetable">
+            <h2>Upcoming Examinations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Course</th>
+                        <th>Venue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3 Apr 2023</td>
+                        <td>09 AM - 12PM</td>
+                        <td>CSC 418</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
+                        <td>5 Apr 2023</td>
+                        <td>09 AM - 12 PM</td>
+                        <td>CSC 442</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
+                        <td>5 Apr 2023</td>
+                        <td>01 PM - 3 PM</td>
+                        <td>CSC 458</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
+                        <td>6 Apr 2023</td>
+                        <td>09 AM- 12 PM</td>
+                        <td>CSC 426</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
+                        <td>7 Apr 2023</td>
+                        <td>09 AM- 12 PM</td>
+                        <td>CSC 456</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
+                        <td>11 Apr 2023</td>
+                        <td>09 AM- 12 PM</td>
+                        <td>CSC 472</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
+                        <td>11 Apr 2023</td>
+                        <td>03 PM- 5 PM</td>
+                        <td>CSC 468</td>
+                        <td>Main Hall</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    </main>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>

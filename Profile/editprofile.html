@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Profile</title>
+    <link rel="shortcut icon" href="images/dashboard.png" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body style="background: #9dbefc">
+    <section>
+      <div class="container my-4">
+        <div class="d-flex justify-content-center">
+          <div class="card" style="width: 800px">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 p-3">
+                <div class="d-flex m-4 mb-3 justify-content-between">
+                  <div>
+                    <h4 class="font-weight-bold">Edit Profile</h4>
+                  </div>
+                </div>
+
+                <div class="row m-2 justify-content-center">
+                  <div class="card-image">
+                    <div class="profile">
+                      <!-- User Profile Image -->
+                      <img class="profile-pic" src="images/avatar.png" />
+
+                      <!-- Default Image -->
+                      <!-- <i class="fa fa-user fa-5x"></i> -->
+                    </div>
+                    <div class="p-image">
+                      <i class="fa fa-camera upload-button"></i>
+                      <input class="file-upload" type="file" accept="image/*" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row m-2">
+                  <div class="col-lg-6 col-sm-12">
+                    <div class="name">
+                      <label for="name">Name</label><br />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="fname"
+                        value="fname"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-12">
+                    <div class="lastname">
+                      <label for="lastname">Last Name</label><br />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastname"
+                        name="lname"
+                        value="lname"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="username m-4">
+                  <label for="username">User Name</label><br />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    name="uname"
+                    value="uname"
+                    required
+                  />
+                </div>
+                <hr />
+                <div class="row m-2">
+                  <div class="col-lg-6 col-sm-12">
+                    <div class="email">
+                      <label for="email">Email</label><br />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="email"
+                        name="emailadd"
+                        value="emailadd"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-12">
+                    <div class="phone">
+                      <label for="phone">Mobile no.</label><br />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        value="phone"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="row m-2">
+                  <div class="col-lg-6 col-sm-12">
+                    <div class="profession">
+                      <label for="work">Profession</label><br />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="work"
+                        name="prof"
+                        value="Student"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-12">
+                    <div class="address">
+                      <label for="address">Address</label><br />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="address"
+                        name="address"
+                        value="Enugu, Enugu State"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="sub_btn ml-4 mt-2">
+                  <label></label><br />
+                  <a href="profile.html">
+                    <button
+                      type="submit"
+                      class="btn-primary text-light btn button"
+                    >
+                      Save
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var data = decodeURIComponent(window.location.search);
+      data = data.substring(1);
+      var queries = data.split("&");
+      var name = "";
+      var lastname = "";
+      var username = "";
+      var email = "";
+      var work = "";
+      var address = "";
+      for (var i = 0; i < queries.length; i++) {
+        var num = i;
+        switch (num) {
+          case 1:
+            name = queries[i];
+            break;
+
+          case 2:
+            lastname = queries[i];
+            break;
+
+          case 3:
+            username = queries[i];
+            break;
+
+          case 4:
+            email = queries[i];
+            break;
+
+          case 5:
+            phone = queries[i];
+            break;
+
+          case 6:
+            work = queries[i];
+            break;
+          case 7:
+            address = queries[i];
+            break;
+
+          default:
+            var x = "";
+        }
+      }
+
+      document.getElementById("name").value = name;
+      document.getElementById("lastname").value = lastname;
+      document.getElementById("username").value = username;
+      document.getElementById("email").value = email;
+      document.getElementById("phone").value = phone;
+      document.getElementById("professionne").value = work;
+      document.getElementById("address").value = address;
+    </script>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- custom js -->
+  <script src="js/loader.js"></script>
+</html>
